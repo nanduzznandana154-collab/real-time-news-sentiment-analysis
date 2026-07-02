@@ -22,3 +22,7 @@ for article in data["results"][:10]:
         sentiment = "Negative"
     else:
         sentiment = "Neutral"
+
+    print(title)
+    print("Sentiment:", sentiment)
+    print("-" * 50)

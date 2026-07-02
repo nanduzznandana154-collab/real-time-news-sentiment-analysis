@@ -13,3 +13,5 @@ data = requests.get(url).json()
 
 for article in data["results"][:10]:
     title = article["title"]
+    
+    score = TextBlob(title).sentiment.polarity

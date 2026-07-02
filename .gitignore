@@ -1,2 +1,8 @@
 .venv
 .env
+__pycache__/
+*.pyc
+lambda_package/
+*.zip
+.vscode/
+.idea/

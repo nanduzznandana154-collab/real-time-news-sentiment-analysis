@@ -19,3 +19,7 @@ query = "SELECT * FROM news_data"
 df = pd.read_sql(query, conn)
 
 st.title("News Sentiment Dashboard")
+
+st.subheader("News Records")
+
+st.dataframe(df)

@@ -31,3 +31,5 @@ for article in data["results"][:10]:
         "title": title,
         "sentiment": sentiment
     })
+
+df = pd.DataFrame(news_list)

@@ -41,3 +41,6 @@ for article in data["results"][:5]:
 conn.commit()
 
 print("Data Saved Successfully")
+
+cur.close()
+conn.close()

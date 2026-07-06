@@ -15,3 +15,9 @@ def lambda_handler(event, context):
     data = requests.get(url).json()
 
     s3 = boto3.client("s3")
+
+    s3.put_object(
+        Bucket="news-bucket-0078",
+        Key="news_data.json",
+        Body=json.dumps(data)
+    )
